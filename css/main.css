@@ -1,12 +1,12 @@
 body {
     background: paleturquoise;
 }
-.screen {
+#screen {
     display: flex;
     line-height: 2em;
     font-size: 60px;
     border: 1px solid black;
-    width: 400px;
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
     padding-left: auto;
@@ -16,16 +16,16 @@ body {
 .solution {
     text-align: right;
 }
-.container {
+.keys {
     display: grid;
-    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-columns: 120px 120px 120px 120px;
     padding: 10px;
     border: 1px solid black;
-    width: 400px;
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
 }
-.item {
+.keys button {
     box-sizing: border-box;
     /* border: 1px solid black; */
     padding: 10px;
@@ -35,16 +35,18 @@ body {
     text-justify: center;
     border-radius: 50%;
     font-size: 25px;
+    border: none;
+    margin: 5px 5px;
 }
-.item:hover {
+.keys button:hover {
     background: navy;
     color: white;
     transition: 500ms;
 }
-.item:not(:hover){
+.keys button:not(:hover){
     transition: 500ms;
 }
-button {
+#enter {
     display: block;
     padding: 5px 30px;
     font-size: 30px;
